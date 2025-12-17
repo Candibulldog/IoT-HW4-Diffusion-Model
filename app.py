@@ -58,7 +58,7 @@ with col1:
     # 顯示最後一張圖 (去噪完成)
     final_img_path = image_files[-1]
     # 使用 use_container_width (舊版是 use_column_width)
-    st.image(str(final_img_path), width=300, caption=f"Seed: {selected_seed} (Clean)")
+    st.image(str(final_img_path), width=150, caption=f"Seed: {selected_seed} (Clean)")
 
 with col2:
     st.subheader("擴散過程 (Denoising Trajectory)")
@@ -82,6 +82,6 @@ with col2:
     except:
         caption = f"Step {step_idx}"
 
-    st.image(str(current_img_path), width=300, caption=caption)
+    st.image(str(current_img_path), width=150, caption=caption)
 
 st.info("💡 Note: This is a pre-computed demonstration running without GPU inference.")
