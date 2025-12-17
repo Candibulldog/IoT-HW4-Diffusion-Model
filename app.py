@@ -74,10 +74,6 @@ def download_model_if_missing(model_path: Path):
     # ID 就是 '1A2B3C...'
     GOOGLE_DRIVE_FILE_ID = "149W929n24DoCwzUWY_trlwG5lcpom4cF"
 
-    if GOOGLE_DRIVE_FILE_ID == "149W929n24DoCwzUWY_trlwG5lcpom4cF":
-        st.error("Error: Please enter the correct Google Drive File ID in app.py!")
-        st.stop()
-
     url = f"https://drive.google.com/uc?id={GOOGLE_DRIVE_FILE_ID}"
 
     try:
